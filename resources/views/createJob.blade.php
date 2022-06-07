@@ -108,7 +108,7 @@
                             </div>
                             <div class="col-lg-6 mb-4">
                                 <div class="">
-                                    <label class="mb-2 fw-bold">Available Amount</label>
+                                    <label class="mb-2 fw-bold">Available Job</label>
                                     <input type="number" id="availableAmount" onblur="countSum()" name="availability" class="form-control w-100 bg-cl-ash2" placeholder="Enter Amount">
                                     @error('availability')
                                       <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -135,10 +135,10 @@
                                     <label class="mb-2 fw-bold">Campaign Posting Cost</label>
                                     <div class="createJobCampaign d-flex rounded-3">
                                         <div class="createJobCampaignIcon d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-dollar-sign cl-pm"></i>
+                                            <span id="costPercent">10</span>
                                         </div>
                                         <div class="d-flex align-items-center px-4">
-                                            <input name="cost" class="fs16 cl-pm" id="cost" onblur="countSum()" style="border:0" type="number" value="10" readonly/>
+                                            <input name="cost" class="fs16 cl-pm" id="cost" style="border:0" type="number" value="" readonly/>
                                             
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@
                                             <i class="fas fa-dollar-sign cl-green"></i>
                                         </div>
                                         <div>
-                                        <input name="totalCost" id="totalCost" onblur="countSum()" class="fs20 fw-bold w-30 bg-cl-sky" style="border:0" type="number" readonly/>
+                                        <input name="totalCost" id="totalCost" class="fs20 fw-bold w-30 bg-cl-sky" style="border:0" type="number" readonly/>
                                             
                                         </div>
                                     </div>
